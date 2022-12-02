@@ -1,6 +1,8 @@
 import React from 'react'
 import Home from './home'
+import { useNavigate } from 'react-router-dom'
 export default function Dashboard() {
+  const navigate=useNavigate()
   return (
     <>
     
@@ -10,59 +12,54 @@ export default function Dashboard() {
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
       <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <p class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Sales
-          </a>
+          </p>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-divider"/></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <li><p class="dropdown-item" href="#">Action</p></li>
+            <li><p class="dropdown-item" href="#">Another action</p></li>
+            <li><p class="dropdown-divider"/></li>
+            <li><p class="dropdown-item" href="#">Something else here</p></li>
           </ul>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <p class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Purchase
-          </a>
+          </p>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-divider"/></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <li><p class="dropdown-item" href="#" onClick={()=>navigate('/dashboard/purchaseform')}>New Purchase</p></li>
+            <li><p class="dropdown-item" href="#">All Purchase</p></li>
+            <li><p class="dropdown-divider"/></li>
+            <li><p class="dropdown-item" href="#">Something else here</p></li>
           </ul>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <p class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             GST Report
-          </a>
+          </p>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-divider"/></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <li><p class="dropdown-item" href="#">Action</p></li>
+            <li><p class="dropdown-item" href="#">Another action</p></li>
+            <li><p class="dropdown-divider"/></li>
+            <li><p class="dropdown-item" href="#">Something else here</p></li>
           </ul>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <p class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Create Vendor
-          </a>
+          </p>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-divider"/></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <li><p class="dropdown-item" href="#">Action</p></li>
+            <li><p class="dropdown-item" href="#">Another action</p></li>
+            <li><p class="dropdown-divider"/></li>
+            <li><p class="dropdown-item" href="#">Something else here</p></li>
           </ul>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="" aria-expanded="false">
+          <p class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="" aria-expanded="false">
             Day Book
-          </a>
-          {/* <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-divider"/></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul> */}
+          </p>
+          
         </li>
       </ul>
       <form class="d-flex">
