@@ -49,7 +49,7 @@ export default function Dashboard() {
             Create Vendor
           </p>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><p class="dropdown-item" href="#">Action</p></li>
+            <li><p class="dropdown-item" onClick={()=>navigate('/dasboard/vendor')}>Add New Vendor</p></li>
             <li><p class="dropdown-item" href="#">Another action</p></li>
             <li><p class="dropdown-divider"/></li>
             <li><p class="dropdown-item" href="#">Something else here</p></li>

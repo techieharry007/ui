@@ -118,7 +118,9 @@ export default function Purchaseform() {
             aria-describedby="basic-addon1"
             value={date.currentDate}
             onChange={(e) => {
-              setDate({ ...date, currentDate: e.target.value });
+              setDate({ ...date, currentDate: e.target.value },()=>{
+                console.log(date)
+              });
             }}
           />
           <span

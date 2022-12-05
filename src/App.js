@@ -5,6 +5,7 @@ import Dashboard from "./cmp/dashboard";
 import { Routes, Route, Navigate } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import Purchaseform from './cmp/purchase/purchaseform'
+import Addvendor from "./cmp/vendor/addvendor";
 
 export const Mycontext = createContext();
 function App() {
@@ -52,6 +53,7 @@ function App() {
         <Routes>
     
           {/* <Route path="/" element={<Login validateUser={validateUser} />} /> */}
+          {/* <Route path="/" element={<Dashboard/>} /> */}
           <Route path="/" element={<Purchaseform/>} />
           {/* <Route
             path="/dashboard"

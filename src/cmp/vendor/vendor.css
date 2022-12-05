@@ -1,0 +1,9 @@
+#main-form{
+display: inline-flex;
+}
+label{
+  color: black;
+}
+.form-label{
+  margin-left: 60px;
+}
